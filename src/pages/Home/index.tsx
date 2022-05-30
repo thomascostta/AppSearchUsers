@@ -3,7 +3,7 @@ import {View, Text} from 'react-native';
 
 const Home = () => {
   return (
-    <View>
+    <View >
       <Text>Olá Brasil!</Text>
     </View>
   );
