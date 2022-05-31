@@ -2,10 +2,7 @@ import * as types from '../../types';
 
 export type UserType = {
     avatar_url?: string;
-    subscriptions_url: string;
-    name?: string;
-    email?: any;
-    bio: string;
+    name?: string
 }
 
 export function getUserRequest(name: string): {
