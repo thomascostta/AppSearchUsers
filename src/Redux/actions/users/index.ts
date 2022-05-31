@@ -25,10 +25,12 @@ export function getUserSuccess(user: UserType): {
     }
 }
 
-export function getUserFailure(name: string): {
-    type: string;
+export function getUserFailure(error: string): {
+    type: string,
+    payload: string
 } {
     return {
-        type: types.GET_USER_FAILURE
+        type: types.GET_USER_FAILURE,
+        payload: error
     }
 }
