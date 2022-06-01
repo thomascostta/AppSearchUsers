@@ -1,7 +1,7 @@
 import { UserType } from '../../actions';
 import * as types from '../../types';
 
-interface UserState {
+export interface UserState {
     user?: UserType,
     loading?: boolean,
     error?: string
