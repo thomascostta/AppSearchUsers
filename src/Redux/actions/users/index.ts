@@ -1,8 +1,9 @@
 import * as types from '../../types';
 
 export type UserType = {
-    avatar_url?: string;
-    name?: string
+    avatar_url: string;
+    name: string
+    message: string
 }
 
 export function getUserRequest(name: string): {
