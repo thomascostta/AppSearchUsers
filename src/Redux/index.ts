@@ -12,6 +12,8 @@ const store: Store<unknown, AnyAction> = createStore(
 
 sagaMiddleware.run(rootSaga)
 
-export default store
-export * from './actions'
-export * from './types'
+export default store;
+export type RootState = ReturnType<typeof rootReducer>;
+export type AppDispatch = typeof store.dispatch;
+export * from './actions';
+export * from './types';
