@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import User from '../../components/user';
 
 const Home = () => {
   return (
-    <View >
-      <Text>Olá Brasil!</Text>
-    </View>
+    < >
+      <User />
+    </>
   );
 };
 
