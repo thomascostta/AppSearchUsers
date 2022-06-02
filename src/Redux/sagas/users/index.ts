@@ -1,18 +1,19 @@
 import { all, call, put, takeLatest } from '@redux-saga/core/effects'
 import { getUserFailure, getUserSuccess, UserType } from '../../actions';
 import * as types from '../../types';
+import axios from 'axios';
 
 
 let userApi: UserType;
 const userRequest = async (name: string) => {
-    try {
-        const request = await fetch(`https://api.github.com/users/${name}`)
-        const response = await request.json()
-        userApi = response
-        return true
-    } catch (error) {
-        return false
-    }
+    await axios.get(`https://api.github.com/users/${name}`)
+        .then(({ data }) => {
+            userApi = data
+            return true
+        }, error => {
+            console.log(error)
+            return false
+        });
 }
 
 export function* userData(action: { type: string, payload: string }) {
