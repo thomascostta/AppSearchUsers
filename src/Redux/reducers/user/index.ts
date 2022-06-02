@@ -2,15 +2,16 @@ import { UserType } from '../../actions';
 import * as types from '../../types';
 
 export interface UserState {
-    user?: UserType,
-    loading?: boolean,
-    error?: string
+    user: UserType,
+    loading: boolean,
+    error: string
 }
 
 const initialState: UserState = {
     user: {
         avatar_url: '',
-        name: ''
+        name: '',
+        message: ''
     },
     loading: false,
     error: ''
