@@ -20,7 +20,7 @@ export function* userData(action: { type: string, payload: string }) {
         yield call(userRequest, action.payload)
         yield put(getUserSuccess(userApi))
     } catch (error) {
-        yield put(getUserFailure('Falha ao requisitar'))
+        yield put(getUserFailure(userApi))
     }
 }
 
