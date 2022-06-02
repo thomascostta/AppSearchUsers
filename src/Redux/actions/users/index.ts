@@ -26,9 +26,9 @@ export function getUserSuccess(user: UserType): {
     }
 }
 
-export function getUserFailure(error: string): {
+export function getUserFailure(error: UserType): {
     type: string,
-    payload: string
+    payload: UserType
 } {
     return {
         type: types.GET_USER_FAILURE,
