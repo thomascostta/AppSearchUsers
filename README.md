@@ -24,7 +24,7 @@ $ https://github.com/thomascostta/AppSearchUsers.git
 ```
 
 ## Install the dependencies
-`pm i` or `yarn`
+`npm i` or `yarn`
 
 ## Start your Metro server:
 `npx react-native start`
