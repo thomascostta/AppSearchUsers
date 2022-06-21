@@ -31,14 +31,12 @@ $ https://github.com/thomascostta/AppSearchUsers.git
 
 ## Run :iphone:
 Run the application (Android)
-```bash
-$ react-native run-android
-```
+
+`react-native run-android`
 
 Run the application (iOS)
-```bash
-$ react-native run-ios --simulator="iPhone model"
-```
+
+`react-native run-ios --simulator="iPhone model"`
 
 ---
 
